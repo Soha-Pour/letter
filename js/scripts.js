@@ -1,9 +1,11 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-    var recipientInput = $("input#recipient").val();
+    var fullNameInput = $("input#fullName").val();
+    var addressInput = $("input#address").val();
 
-    $(".recipient").text(recipientInput);
+    $(".fullName").text(fullNameInput);
+    $(".address").text(addressInput);
     $("p").show();
-    event.preventDefault();  
+    event.preventDefault();
   });
 });
